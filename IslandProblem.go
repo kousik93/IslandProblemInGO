@@ -21,7 +21,7 @@ func countIslands(input [][]int) int {
  func merge(input [][]int, i int, j int){
     
     if i<0 || j<0 || i>len(input)-1 || j>len(input[0])-1 {
-fmt.Println("Shit happened")
+
         return ;
     }
     //if current cell is water or visited
@@ -31,8 +31,6 @@ fmt.Println("Shit happened")
     //set visited cell to '0'
     input[i][j] =0;
 
-     fmt.Println("This happened")
- 
     //merge all adjacent land
     merge(input, i-1, j);
     merge(input, i+1, j);
